@@ -2,10 +2,36 @@ import Image from "next/image"
 import React from "react"
 export default function CheckoutPage() {
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-4 py-2 bg-white">
+      <div>
+        {/* First Section: Image and Breadcrumb */}
+        <div className="relative font-[sans-serif] before:absolute before:w-full before:h-full before:inset-0 before:bg-black before:opacity-50 before:z-10">
+          <Image
+            src={"/cheekout.png"}
+            alt="Banner Image"
+            width={700}
+            height={400}
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div className="min-h-[350px] relative z-50 max-w-4xl mx-auto flex flex-col justify-center items-center text-center p-6">
+            <h2 className="text-white md:text-5xl text-3xl font-bold mb-8">
+              Cheekout Page
+            </h2>
+            <div className="flex items-center space-x-2 text-black">
+              <a href="/" className="text-white">
+                Home{" "}
+              </a>
+              <span className="text-white"> &gt; </span>
+              <a href="/about" className="text-orange-500">
+                Cheekout
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="grid gap-8 lg:grid-cols-2">
         {/* Left Column - Forms */}
-        <div className="space-y-6">
+        <div className="space-y-6 bg-white">
           <div>
             <h2 className="text-xl font-semibold mb-4">Shipping Address</h2>
             <div className="grid gap-4">

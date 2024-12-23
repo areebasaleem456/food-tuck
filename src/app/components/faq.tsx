@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Faq = () => {
   return (
-    <div>
+    <div className="bg-white">
       <div>
         {/* First Section: Image and Breadcrumb */}
         <div className="relative font-[sans-serif] before:absolute before:w-full before:h-full before:inset-0 before:bg-black before:opacity-50 before:z-10">
